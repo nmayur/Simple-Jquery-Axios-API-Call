@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery API Fetch</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header class="title">
+        <a id="menu-toggle" href="#" class="btn btn-dark btn-lg-custom toggle"><i class="fa fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <a id="menu-close" href="#" class="btn btn-light btn-lg-custom pull-right toggle btn-cls"><i class="fa fa-times"></i></a>
+                <li class="sidebar-brand">
+                    <a href="./index.html" onclick=$menuCLose.click();>JQuery API Fetch</a>
+                </li>
+                <li>
+                    <a href="./index.html" onclick=$menuCLose.click();>Table</a>
+                </li>
+                <li>
+                    <a href="./cards.html" onclick=$menuCLose.click();>Card</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 intro jquery_intro">
+                    <h3 class="text-center align-baseline into-txt">
+                          JQuery AJAX API Fetch Example
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="table" class="table-panel">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Post title</th>
+                                <th>Post</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tBody">
+                          <!--  Here Rows wil be appended thu jquery from getData.js -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>        
+
+    <script src="./js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/functions.js"></script>
+    <script src="./js/getData.js"></script>
+</body>
+
+</html>
