@@ -35,12 +35,31 @@
             <div class="row">
                 <div class="col-sm-12 intro jquery_intro">
                     <h3 class="text-center align-baseline into-txt">
-                          JQuery AJAX API Fetch Example
+                        JQuery AJAX API Fetch Example
                     </h3>
                 </div>
             </div>
         </div>
     </header>
+    <section>
+        <div class="container form_section">
+            <div class="row">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="post_ID" placeholder="ID">
+                    </div>
+                    <div class="form-group mx-sm-3">
+                        <input type="text" class="form-control" id="post_Title" placeholder="Title">
+                    </div>
+                    <div class="form-group mx-sm-3">
+                        <input type="text" class="form-control" id="post_Post" placeholder="Post">
+                    </div>
+                    <button id="addPost" class="btn btn-primary">Add Post</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
 
     <section id="table" class="table-panel">
         <div class="container-fluid">
@@ -55,13 +74,13 @@
                             </tr>
                         </thead>
                         <tbody id="tBody">
-                          <!--  Here Rows wil be appended thu jquery from getData.js testing-->
+                            <!--  Here Rows wil be appended thu jquery from getData.js testing-->
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
-    </section>        
+    </section>
 
     <script src="./js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.js"></script>
