@@ -1,12 +1,6 @@
 $(function() {
     var $tBody = $('#tBody');
 
-    var _submitBtn = $('#addPost');
-
-    var _postTitle = $('#post_Title');
-    var _postPost = $('#post_Post');
-    var _postID = $('#post_ID');
-
     $.ajax({
         type: 'GET',
         // Posts URL
@@ -33,17 +27,24 @@ $(function() {
             });
         },
         error: function() {
-            console.log("something not good");
+            console.log("something not good in get");
         }
     });
+
+    var _submitBtn = $('#addPost');
+    var _postTitle = $('#post_Title');
+    var _postPost = $('#post_Post');
+    // var _postID = $('#post_ID');
 
     _submitBtn.on('click', function(e) {
         e.preventDefault();
         // var _title = _postTitle.val();
         // var _post = _postPost.val();
 
+        var random = Math.random().toFixed(2) * 100;
+        // console.log(random);
         var _postData = {
-            _id: _postID.val(),
+            _id: random,
             _title: _postTitle.val(),
             _post: _postPost.val()
         }
@@ -65,10 +66,8 @@ $(function() {
                 $tBody.prepend(newRow);
             },
             error: function() {
-                console.log("something not good");
+                console.log("something not good in post");
             }
         });
-
     });
-
 });
